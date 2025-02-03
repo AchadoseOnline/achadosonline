@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ___________DESKTOP___________________________ */
+@media (max-width: 768px ){
+
+  body{
+    background-color: #DDDD;
+}
+
+  header{
+      background-color: #160f6c;
+      height: 150px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .title{
+    margin-left: 250px;
+  }
+
+  /* canais */
+
+  .canais{
+    border: 3px solid white;
+    padding: 5px;
+
+    margin-right: 200px;
+    margin-top: 50px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+  }
+
+  .grupos{
+    border: 1px solid rgb(237, 61, 13);
+
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+
+  .grupos img{
+    height: 80px;
+    
+    border-radius: 50%;
+  }
+
+  .grupos a::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #05348b;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.0s infinite;
+  }
+
+  .mensagem{
+    border: 1px solid greenyellow;
+    color: white;
+
+    width: 200px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Nunito', sans-serif;
+
+    
+  }
+
+  .mensagem h5{
+    text-transform: uppercase;
+  }
+
+  header h1{
+      font-family: Genty;
+      color: white;
+  }
+
+  header h3{
+      font-family: Arial, Helvetica, sans-serif;
+      color: orange;
+      margin-left: 70px;
+  }
+
+  /*_____________FAIXA___________________*/
+
+
+  .faixa{
+      background-color: #160f6c;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      
+  }
+  .faixa img{
+      height: 30px;
+      width: 125px
+  }
+
+
+  /* ____________MAIN________________ */
+
+  main{
+      height: calc(100vh - 200px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  button{
+      background-color: orange;
+      height: 100px;
+      padding: 20px;
+      border-radius: 10px;
+  }
+
+
+
+  .telegram{
+        
+    height: 50%;
+  }
+
+  .ofertas{
+    /* border: 1px solid red; */
+    height: auto;
+    padding: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0px 5px;
+  }
+
+  .link{
+    background-color: white;
+    padding: 5px;
+    height: 200px;
+    width: 200px;
+    border: 1px solid rgb(151, 146, 146);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .link img{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .link a{
+    text-decoration: none;
+  }
+
+}
